@@ -2,14 +2,14 @@
   overflow: hidden;
   position: relative;
   z-index: 0;
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
   @include vp-1023 {
-    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   @include vp-767 {
-    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 }
 
@@ -162,6 +162,7 @@
   text-shadow: $color-torch-red 0 0 5px;
   transition: 0.3s;
 }
+
 .banner__link:active {
   transition: 0.3s;
   color: $color-torch-red;
@@ -172,7 +173,7 @@
   user-select: none;
   width: 234px;
   padding: 20px;
-  border: 4px solid #FFFFFF;
+  border: 4px solid $color-default-white;
   color: $color-default-white;
   font-weight: 700;
   font-size: 12px;
@@ -203,6 +204,7 @@
 }
 
 .banner__img {
+  background-color: $color-supphire;
   margin-left: 64px;
   width: 500px;
 

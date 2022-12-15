@@ -1,0 +1,132 @@
+.main-footer {
+  background-color: $color-black-russian;
+}
+
+.main-footer__container {
+  position: relative;
+  padding-top: 41px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include vp-1023 {
+    min-width: 768px;
+    max-width: 1024px;
+    padding-top: 45px;
+    padding-bottom: 44px;
+  }
+
+  @include vp-767 {
+    padding-top: 50px;
+    padding-bottom: 52px;
+    flex-wrap: wrap;
+  }
+}
+
+.main-footer__logo {
+  margin-right: 9px;
+
+  @include vp-1023 {
+    margin-right: 12px;
+  }
+
+  @include vp-767 {
+    position: absolute;
+  }
+}
+
+.main-footer__logo svg {
+  height: 32px;
+  margin-top: 1px;
+
+  @include vp-1023 {
+    width: 82px;
+    height: 18px;
+  }
+
+  @include vp-767 {
+    width: 68px;
+    height: 15px;
+  }
+}
+
+.main-footer__list {
+  margin-top: 5px;
+  max-width: 450px;
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  grid-gap: 40px;
+
+  @include vp-1023 {
+    margin-top: 3px;
+    max-width: 400px;
+    grid-gap: 30px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    grid-auto-flow: column;
+    grid-column-gap: 70px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(2, 90px);
+    grid-template-rows: repeat(3, 20px);
+  }
+}
+
+.main-footer__item--1 {
+  @include vp-767 {
+    grid-row: 2 / 3;
+  }
+}
+
+.main-footer__link {
+  transition: 0.3s;
+  color: $color-default-white;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main-footer__link:hover {
+  transition: 0.3s;
+  text-shadow: $color-default-white 0 0 10px;
+}
+
+.main-footer__link:active {
+  transition: 0.3s;
+  color: $color-torch-red;
+}
+
+.main-footer__socials {
+  display: grid;
+  grid-template-columns: repeat(3, 25px);
+  grid-gap: 11px;
+
+  @include vp-767 {
+    margin-top: 32px;
+  }
+}
+
+.main-footer__social-link svg {
+  transition: 0.3s;
+}
+
+.main-footer__social-link:hover svg {
+  transition: 0.3s;
+  border-radius: 50%;
+  box-shadow: $color-default-white 0 0 10px;
+}
+
+.main-footer__social-link:active svg {
+  transition: 0.3s;
+  opacity: 0.5;
+}
