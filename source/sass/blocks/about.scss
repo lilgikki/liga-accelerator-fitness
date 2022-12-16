@@ -1,0 +1,261 @@
+.about {
+  overflow: hidden;
+  min-width: 320px;
+  width: 100%;
+}
+
+.about__container {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 235px;
+  padding-left: 90px;
+  display: grid;
+  grid-template-columns: 32.2% 60%;
+  grid-gap: 7.7%;
+
+  @include vp-1023 {
+    padding-top: 100px;
+    padding-bottom: 183px;
+    grid-template-columns: 100%;
+    grid-gap: 45px;
+  }
+
+  @include vp-767 {
+    max-width: 767px;
+    padding: 63px 0 70px;
+    grid-gap: 33px;
+  }
+}
+
+.about__text {
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.about__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 0;
+
+  @include vp-1023 {
+    font-size: 42px;
+    line-height: 50px;
+    justify-content: center;
+    margin-right: 14px;
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+    justify-content: flex-start;
+  }
+}
+
+.about__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  margin: 6px 0 39px;
+
+  @include vp-1023 {
+    justify-content: center;
+    margin: 0 0 32px;
+  }
+
+  @include vp-767 {
+    margin: 5px 0 24px;
+    justify-content: flex-start;
+  }
+}
+
+.about__par {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  @include vp-1023 {
+    width: 505px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    text-align: start;
+    padding-right: 30px;
+  }
+}
+
+.about__par--2 {
+  margin-top: 8px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.about__pic {
+  width: 100%;
+  height: 401px;
+  object-fit: cover;
+
+  @include vp-1023 {
+    height: 345px;
+    width: 678px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+  }
+}
+
+.about__video {
+  position: absolute;
+  top: 407px;
+  left: 38.2%;
+
+  @include vp-1023 {
+    top: 587px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  @include vp-767 {
+    width: 100%;
+    position: relative;
+    transform: none;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
+.about__video::after {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  content: "";
+  width: 364px;
+  height: 228px;
+  background-color: rgba(20, 54, 122, 0.5);
+
+  @include vp-1023 {
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.about__preview {
+  position: relative;
+  width: 364px;
+  height: 228px;
+
+  @include vp-1023 {
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.about__link {
+  transition: 0.3s;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+
+  @include vp-1023 {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.about__link:hover {
+  transition: 0.3s;
+  box-shadow: $color-torch-red 0 0 10px;
+}
+
+.about__link:active {
+  opacity: 0.8;
+  transition: 0.3s;
+  width: 80px;
+  height: 80px;
+
+  @include vp-1023 {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.about__link::after {
+  transition: 0.3s;
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid rgba(237, 2, 51, 0.2);
+
+  @include vp-1023 {
+    width: 73px;
+    height: 73px;
+  }
+}
+
+.about__link:hover::after {
+  transition: 0.3s;
+  width: 110px;
+  height: 110px;
+
+  @include vp-1023 {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+.about__link svg {
+  width: 13px;
+  height: 15px;
+  margin-left: 4px;
+
+  @include vp-1023 {
+    margin-left: 3px;
+    width: 9px;
+    height: 10px;
+  }
+}
