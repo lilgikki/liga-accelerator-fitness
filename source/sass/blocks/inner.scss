@@ -1,0 +1,11 @@
+.inner {
+  min-width: 320px;
+  overflow: hidden;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @include vp-1023 {
+    grid-template-columns: 100%;
+  }
+}

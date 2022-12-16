@@ -59,7 +59,7 @@
             </div>
             <picture>
               <source type="image/webp" media="(min-width: 1024px)" srcset="img/about-desktop.webp, img/about-desktop@2.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/abou-tablet.webp, img/about-tablet@2.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/about-tablet.webp, img/about-tablet@2.webp 2x">
               <source type="image/webp" srcset="img/about-mobile.webp, img/about-mobile@2.webp 2x">
               <img class="about__pic" width="320" height="313" src="img/about-mobile.jpg" srcset="img/about-mobile@2.jpg" alt="Изображение тренажерного зала">
             </picture>
@@ -79,6 +79,45 @@
             </div>
           </div>
         </section>
+        <div class="inner">
+          <section class="feedback">
+            <div class="feedback__container container">
+              <h2 class="feedback__title">Бесплатное занятие</h2>
+              <form action="https://echo.htmlacademy.ru/" method="get" id="feedback-form">
+                <label for="name">
+                  <input type="text" id="name" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\s\-]+$" required>
+                </label>
+                <label for="tel">
+                  <input type="tel" id="tel" placeholder="Телефон" name="telephone" pattern="\+7\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
+                </label>
+                <button class="feedback__submit" type="submit">Отправить</button>
+              </form>
+            </div>
+          </section>
+          <section class="contacts">
+            <div class="contacts__container container">
+              <h2 class="contacts__title">Контакты</h2>
+              <ul class="contacts__list list">
+                <li class="contacts__item">
+                  <h3 class="contacts__about">Адрес:</h3>
+                  <span class="contacts__description">г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</span>
+                </li>
+                <li class="contacts__item contacts__item--2">
+                  <h3 class="contacts__about">График работы:</h3>
+                  <span class="contacts__description">Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</span>
+                </li>
+                <li class="contacts__item contacts__item--3">
+                  <h3 class="contacts__about">Телефон:</h3>
+                  <a class="contacts__description contacts__description--link" href="tel:8-800-555-55-55">8-800-555-55-55</a>
+                </li>
+                <li class="contacts__item">
+                  <h3 class="contacts__about">Email:</h3>
+                  <a class="contacts__description contacts__description--link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </main>
       <footer class="main-footer">
         <div class="main-footer__container container">
