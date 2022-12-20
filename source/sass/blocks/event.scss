@@ -1,0 +1,229 @@
+.event {
+  overflow: hidden;
+  min-width: 320px;
+  width: 100%;
+}
+
+.event__container {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 500px calc(100% - 500px);
+  min-height: 500px;
+
+  @include vp-1023 {
+    grid-template-columns: 292px calc(100% - 292px);
+    min-height: 292px;
+    max-width: 1023px;
+  }
+
+  @include vp-767 {
+    max-width: 767px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, max-content);
+  }
+}
+
+.event__info {
+  padding: 81px 78px;
+  background-color: $color-torch-red;
+  color: $color-default-white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include vp-1023 {
+    padding: 47px 45px;
+  }
+
+  @include vp-767 {
+    min-height: 292px;
+  }
+}
+
+.event__info p {
+  margin-top: 15px;
+  margin-bottom: 45px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #FFFFFF;
+
+  @include vp-1023 {
+    margin-top: 1px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.event__date {
+  margin-right: 2px;
+  width: 92px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include vp-1023 {
+    width: 56px;
+    margin-right: 0;
+  }
+}
+
+.event__date span {
+  margin-bottom: 4px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+
+  @include vp-1023 {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.event__date b {
+  border-top: solid 1px $color-default-white;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include vp-1023 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.event__number {
+  margin-bottom: 22px;
+  border-top: solid 1px $color-default-white;
+  padding-top: 4px;
+  width: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include vp-1023 {
+    width: 42px;
+    margin-bottom: 5px;
+  }
+}
+
+.event__number b {
+  border: none;
+  margin-top: 4px;
+  line-height: 30px;
+
+  @include vp-1023 {
+    font-size: 24px;
+    line-height: 17px;
+  }
+}
+
+.event__month span {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 0;
+
+  @include vp-1023 {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.event__title {
+  margin: 0;
+  margin-top: 3px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  width: 201px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 79px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @include vp-1023 {
+    margin: 0;
+    width: 117px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+.event__link {
+  transition: 0.3s;
+  border: 4px solid $color-default-white;
+  color: $color-default-white;
+  width: 100%;
+  display: flex;
+  padding: 26px 27px 23px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  @include vp-1023 {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 12px;
+    border: 2px solid $color-default-white;
+  }
+}
+
+.event__link:hover {
+  text-shadow: 0 0 5px $color-default-white;
+  transition: 0.3s;
+  box-shadow: $color-default-white 0 0 20px;
+}
+
+.event__link:active {
+  text-shadow: 0 0 5px $color-torch-red;
+  transition: 0.3s;
+  background-color: $color-default-white;
+  color: $color-torch-red;
+}
+
+.event__pic {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+
+  @include vp-1023 {
+    min-height: 292px;
+  }
+
+  @include vp-767 {
+    min-height: 292px;
+  }
+}
+
+.event__img {
+  position: absolute;
+  display: flex;
+  background-color: $color-egyptian-blue;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  @include vp-767 {
+    position: relative;
+  }
+}

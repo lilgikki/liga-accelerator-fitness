@@ -91,7 +91,7 @@
   }
 }
 
-.contacts__about {
+.contacts__item h3 {
   margin: 0;
   margin-bottom: 3px;
   font-weight: 700;
@@ -107,7 +107,8 @@
   }
 }
 
-.contacts__description {
+.contacts__item span,
+.contacts__item a {
   color: $color-supphire;
   font-weight: 400;
   font-size: 14px;
@@ -122,12 +123,12 @@
   }
 }
 
-.contacts__description--link:hover {
+.contacts__item a:hover {
   text-shadow: $color-egyptian-blue 0 0 5px;
   transition: 0.3s;
 }
 
-.contacts__description--link:active {
+.contacts__item a:active {
   color: $color-default-white;
   transition: 0.3s;
 }

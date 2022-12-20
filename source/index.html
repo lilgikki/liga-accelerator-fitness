@@ -53,9 +53,11 @@
           <div class="about__container container">
             <div class="about__text">
               <h2 class="about__title">Тренажерный зал</h2>
-              <span class="about__description">Просторный зал площадью 900&nbsp;кв/м</span>
-              <p class="about__par">Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-              <p class="about__par about__par--2">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+              <span>Просторный зал площадью 900&nbsp;кв/м</span>
+              <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <div class="about__par-hidden">
+                <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+              </div>
             </div>
             <picture>
               <source type="image/webp" media="(min-width: 1024px)" srcset="img/about-desktop.webp, img/about-desktop@2.webp 2x">
@@ -79,6 +81,33 @@
             </div>
           </div>
         </section>
+        <section class="event">
+          <div class="event__container container">
+            <div class="event__info">
+              <h2 class="event__title">SUPER GAMES</h2>
+              <div class="event__date">
+                <span>Дата</span>
+                <div class="event__number">
+                  <b>7</b>
+                  <div class="event__month">
+                    <span>Марта</span>
+                    <span>2019</span>
+                  </div>
+                </div>
+                <span>Время</span>
+                <b>12:00</b>
+              </div>
+              <p>Ежегодные соревнования по&nbsp;CrossFit</p>
+              <a class="event__link" href="#">Заполнить заявку</a>
+            </div>
+            <picture class="event__pic">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/poster-desktop.webp, img/poster-desktop@2.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/poster-tablet.webp, img/poster-tablet@2.webp 2x">
+              <source type="image/webp" srcset="img/poster-mobile.webp, img/poster-mobile@2.webp 2x">
+              <img class="event__img" width="290" height="292" src="img/poster-mobile.jpg" srcset="img/poster-mobile@2.jpg" alt="Постер ивента">
+            </picture>
+          </div>
+        </section>
         <div class="inner">
           <section class="feedback">
             <div class="feedback__container container">
@@ -99,20 +128,20 @@
               <h2 class="contacts__title">Контакты</h2>
               <ul class="contacts__list list">
                 <li class="contacts__item">
-                  <h3 class="contacts__about">Адрес:</h3>
-                  <span class="contacts__description">г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</span>
+                  <h3>Адрес:</h3>
+                  <span>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</span>
                 </li>
                 <li class="contacts__item contacts__item--2">
-                  <h3 class="contacts__about">График работы:</h3>
-                  <span class="contacts__description">Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</span>
+                  <h3>График работы:</h3>
+                  <span>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</span>
                 </li>
                 <li class="contacts__item contacts__item--3">
-                  <h3 class="contacts__about">Телефон:</h3>
-                  <a class="contacts__description contacts__description--link" href="tel:8-800-555-55-55">8-800-555-55-55</a>
+                  <h3>Телефон:</h3>
+                  <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
                 </li>
                 <li class="contacts__item">
-                  <h3 class="contacts__about">Email:</h3>
-                  <a class="contacts__description contacts__description--link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  <h3>Email:</h3>
+                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
                 </li>
               </ul>
             </div>
