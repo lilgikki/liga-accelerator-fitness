@@ -50,7 +50,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  color: #FFFFFF;
+  color: $color-default-white;
 
   @include vp-1023 {
     margin-top: 1px;
@@ -147,7 +147,6 @@
   margin-top: 3px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   width: 201px;
-  text-align: center;
   font-weight: 600;
   font-size: 82px;
   line-height: 79px;
@@ -178,7 +177,6 @@
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
 
   @include vp-1023 {
     font-size: 10px;
