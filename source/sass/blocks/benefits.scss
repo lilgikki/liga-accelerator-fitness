@@ -68,7 +68,7 @@
 
 .benefits__list {
   position: relative;
-  width: 100%;
+  width: 89.6%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 32.7%);
@@ -76,6 +76,7 @@
   grid-row-gap: 80px;
 
   @include vp-1023 {
+    width: 100%;
     grid-template-columns: repeat(2, 325px);
     grid-column-gap: calc(100% - 650px);
     grid-row-gap: 43px;

@@ -10,11 +10,13 @@
 
   @include vp-1023 {
     padding-top: 95px;
+    padding-bottom: 92px;
     max-width: 1023px;
   }
 
   @include vp-767 {
     padding-top: 63px;
+    padding-bottom: 63px;
     max-width: 767px;
   }
 }
@@ -65,7 +67,7 @@
 .promotion__item {
   position: relative;
   border: 7px solid;
-  border-image-source: linear-gradient(148.82deg, #d10a42 85%, #00359f 100%);
+  border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 26;
   padding: 28px;
   display: block;
@@ -183,6 +185,7 @@
 }
 
 .promotion__link {
+  transition: 0.3s;
   position: absolute;
   width: fit-content;
   font-weight: 700;
@@ -201,10 +204,32 @@
   }
 }
 
+.promotion__link:hover {
+  transition: 0.3s;
+  text-shadow: 0 0 10px $color-torch-red;
+}
+
+.promotion__link:active {
+  color: $color-default-white;
+  border-color: $color-default-white;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
 .promotion__item--big .promotion__link {
   font-size: 14px;
   line-height: 16px;
   color: $color-default-white;
   border-bottom: 1px solid $color-default-white;
   bottom: 45px;
+}
+
+.promotion__item--big .promotion__link:hover {
+  transition: 0.3s;
+  text-shadow: 0 0 10px $color-default-white;
+}
+
+.promotion__item--big .promotion__link:active {
+  transition: 0.3s;
+  opacity: 0.8;
 }
