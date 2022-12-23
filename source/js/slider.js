@@ -41,6 +41,7 @@ const sliderTrainers = () => {
           spaceBetween: 40,
         },
       },
+      loop: true,
     });
   }
 };
