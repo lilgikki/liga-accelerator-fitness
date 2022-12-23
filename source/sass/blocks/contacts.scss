@@ -10,7 +10,7 @@
   min-width: 512px;
   max-width: 610px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding: 62px 133px 62px;
     margin: 0 auto;
   }
@@ -35,7 +35,7 @@
   margin-left: auto;
   margin-bottom: 37px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin: 0;
     font-size: 42px;
     line-height: 50px;
@@ -61,7 +61,7 @@
   grid-column-gap: 120px;
   grid-row-gap: 18px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     grid-column-gap: 97px;
     grid-row-gap: 20px;
     width: 480px;
@@ -83,7 +83,7 @@
   top: 6%;
   left: 50.5%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     height: 125px;
     top: 6%;
     left: 55.5%;
@@ -123,7 +123,7 @@
   display: flex;
   align-items: center;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 5px;
@@ -140,7 +140,7 @@
   align-items: center;
   transition: 0.3s;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 18px;
     line-height: 27px;
   }

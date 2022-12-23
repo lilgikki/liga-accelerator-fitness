@@ -11,7 +11,7 @@
   grid-template-columns: 500px calc(100% - 500px);
   min-height: 500px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     grid-template-columns: 292px calc(100% - 292px);
     min-height: 292px;
     max-width: 1023px;
@@ -34,7 +34,7 @@
   align-items: flex-start;
   justify-content: space-between;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding: 47px 45px;
   }
 
@@ -54,7 +54,7 @@
   width: 100%;
   color: $color-default-white;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-top: 1px;
     margin-bottom: 25px;
     font-size: 12px;
@@ -70,7 +70,7 @@
   justify-content: flex-start;
   align-items: center;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 56px;
     margin-right: 0;
   }
@@ -85,7 +85,7 @@
   display: flex;
   align-items: center;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-bottom: 0;
     font-size: 12px;
     line-height: 18px;
@@ -101,7 +101,7 @@
   justify-content: flex-start;
   align-items: center;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 24px;
     line-height: 30px;
   }
@@ -116,7 +116,7 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 42px;
     margin-bottom: 5px;
   }
@@ -127,7 +127,7 @@
   margin-top: 4px;
   line-height: 30px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 24px;
     line-height: 17px;
   }
@@ -138,7 +138,7 @@
   line-height: 18px;
   margin-bottom: 0;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 10px;
     line-height: 12px;
   }
@@ -157,7 +157,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin: 0;
     width: 117px;
     font-size: 48px;
@@ -180,7 +180,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 10px;
     line-height: 12px;
     padding: 12px;
@@ -206,7 +206,7 @@
   width: 100%;
   min-height: 500px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     min-height: 292px;
   }
 

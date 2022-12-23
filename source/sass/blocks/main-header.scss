@@ -15,7 +15,7 @@
   align-items: center;
   color: $color-default-white;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding: 35px 45px;
     min-width: 768px;
     max-width: 1024px;
@@ -32,13 +32,13 @@
   margin-top: 10px;
   display: flex;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-top: 0;
   }
 }
 
 .main-header__logo svg {
-  @include vp-1023 {
+  @include vp-1199 {
     width: 82px;
     height: 17px;
   }
@@ -58,7 +58,7 @@
   line-height: 31px;
   letter-spacing: 0.03em;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.02em;

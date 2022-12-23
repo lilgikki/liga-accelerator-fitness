@@ -13,7 +13,7 @@
   grid-template-columns: 32.2% 60%;
   grid-gap: 7.7%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding-top: 100px;
     padding-bottom: 183px;
     grid-template-columns: 100%;
@@ -43,7 +43,7 @@
   letter-spacing: 0.03em;
   margin-bottom: 0;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 42px;
     line-height: 50px;
     justify-content: center;
@@ -66,7 +66,7 @@
   align-items: center;
   margin: 6px 0 39px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     justify-content: center;
     margin: 0 0 32px;
   }
@@ -85,7 +85,7 @@
   align-items: center;
   margin: 0;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 505px;
     margin: 0 auto;
     text-align: center;
@@ -101,7 +101,7 @@
 .about__par-hidden p {
   margin-top: 8px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     display: none;
   }
 }
@@ -112,7 +112,7 @@
   height: 401px;
   object-fit: cover;
 
-  @include vp-1023 {
+  @include vp-1199 {
     height: 345px;
     width: 678px;
   }
@@ -130,7 +130,7 @@
   top: 407px;
   left: 38.2%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     top: 587px;
     left: 50%;
     transform: translate(-50%, 0);
@@ -156,7 +156,7 @@
   height: 228px;
   background-color: rgba(20, 54, 122, 0.5);
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 266px;
     height: 167px;
   }
@@ -172,7 +172,7 @@
   width: 364px;
   height: 228px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 266px;
     height: 167px;
   }
@@ -198,7 +198,7 @@
   border-radius: 50%;
   background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 52px;
     height: 52px;
   }
@@ -215,7 +215,7 @@
   width: 80px;
   height: 80px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 65px;
     height: 65px;
   }
@@ -233,7 +233,7 @@
   border-radius: 50%;
   border: 2px solid rgba(237, 2, 51, 0.2);
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 73px;
     height: 73px;
   }
@@ -244,7 +244,7 @@
   width: 110px;
   height: 110px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 85px;
     height: 85px;
   }
@@ -255,7 +255,7 @@
   height: 15px;
   margin-left: 4px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-left: 3px;
     width: 9px;
     height: 10px;

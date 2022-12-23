@@ -13,7 +13,7 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  @include vp-1023 {
+  @include vp-1199 {
     min-width: 768px;
     max-width: 1024px;
     padding-top: 47px;
@@ -30,7 +30,7 @@
 .main-footer__logo {
   margin-right: 9px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-right: 12px;
   }
 
@@ -43,7 +43,7 @@
   height: 32px;
   margin-top: 1px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 82px;
     height: 18px;
   }
@@ -61,7 +61,7 @@
   grid-template-columns: repeat(5, max-content);
   grid-gap: 40px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-top: 3px;
     max-width: 400px;
     grid-gap: 30px;

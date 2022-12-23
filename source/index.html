@@ -7,6 +7,8 @@
     <meta name="description" content="Описание проекта">
     <title>Фитнесс центр</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/alumni-sans-600.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-400.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
@@ -43,7 +45,7 @@
               <a class="banner__btn" href="#" id="buy-sub">Купить абонемент</a>
             </div>
             <picture>
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/main-banner-desktop.webp, img/main-banner-desktop@2.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-banner-desktop.webp, img/main-banner-desktop@2.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/main-banner-tablet.webp, img/main-banner-tablet@2.webp 2x">
               <img class="banner__img" width="500" height="556" src="img/main-banner-desktop.jpg" srcset="img/main-banner-desktop@2.jpg" alt="Фото тренера">
             </picture>
@@ -60,14 +62,14 @@
               </div>
             </div>
             <picture>
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/about-desktop.webp, img/about-desktop@2.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/about-desktop.webp, img/about-desktop@2.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/about-tablet.webp, img/about-tablet@2.webp 2x">
               <source type="image/webp" srcset="img/about-mobile.webp, img/about-mobile@2.webp 2x">
               <img class="about__pic" width="320" height="313" src="img/about-mobile.jpg" srcset="img/about-mobile@2.jpg" alt="Изображение тренажерного зала">
             </picture>
             <div class="about__video">
               <picture>
-                <source type="image/webp" media="(min-width: 1024px)" srcset="img/about-video-desktop.webp, img/about-video-desktop@2.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/about-video-desktop.webp, img/about-video-desktop@2.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/about-video-tablet.webp, img/about-video-tablet@2.webp 2x">
                 <source type="image/webp" srcset="img/about-video-mobile.webp, img/about-video-mobile@2.webp 2x">
                 <img class="about__preview" width="320" height="167" src="img/about-video-mobile.jpg" srcset="img/about-video-mobile@2.jpg" alt="Превью видео">
@@ -205,7 +207,7 @@
             </ul>
           </div>
           <picture>
-            <source type="image/webp" media="(max-width: 1023px)" srcset="img/dumbbells-tablet.webp, img/dumbbells-tablet@2.webp 2x">
+            <source type="image/webp" media="(max-width: 1199px)" srcset="img/dumbbells-tablet.webp, img/dumbbells-tablet@2.webp 2x">
             <source type="image/webp" srcset="img/dumbbells-desktop.webp, img/dumbbells-desktop@2.webp 2x">
             <img class="subs__img" width="287" height="494" src="img/dumbbells-desktop.png" srcset="img/dumbbells-desktop@2.png" alt="Изображение блинов">
           </picture>
@@ -230,7 +232,7 @@
               <a class="event__link" href="#">Заполнить заявку</a>
             </div>
             <picture class="event__pic">
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/poster-desktop.webp, img/poster-desktop@2.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/poster-desktop.webp, img/poster-desktop@2.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/poster-tablet.webp, img/poster-tablet@2.webp 2x">
               <source type="image/webp" srcset="img/poster-mobile.webp, img/poster-mobile@2.webp 2x">
               <img class="event__img" width="290" height="292" src="img/poster-mobile.jpg" srcset="img/poster-mobile@2.jpg" alt="Постер ивента">
@@ -498,7 +500,7 @@
                   <a class="promotion__link" href="#">Подробнее</a>
                 </div>
                 <picture class="promotion__pic">
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/stock-desktop.webp, img/stock-desktop@2.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/stock-desktop.webp, img/stock-desktop@2.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/stock-tablet.webp, img/stock-tablet@2.webp 2x">
                   <source type="image/webp" srcset="img/stock-mobile.webp, img/stock-mobile@2.webp 2x">
                   <img class="promotion__img" width="290" height="299" src="img/stock-mobile.jpg" srcset="img/stock-mobile@2.jpg" alt="Фотография в блоке акции">
@@ -578,9 +580,11 @@
               <h2 class="feedback__title">Бесплатное занятие</h2>
               <form action="https://echo.htmlacademy.ru/" method="get" id="feedback-form">
                 <label for="name">
+                  <span class="visually-hidden">Ваше имя</span>
                   <input type="text" id="name" placeholder="Имя" name="name" pattern="^[A-Za-zА-Яа-яЁё\s\-]+$" required>
                 </label>
                 <label for="tel">
+                  <span class="visually-hidden">Номер телефона</span>
                   <input type="tel" id="tel" placeholder="Телефон" name="telephone" pattern="\+7\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
                 </label>
                 <button class="feedback__submit" type="submit">Отправить</button>

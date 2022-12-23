@@ -10,7 +10,7 @@
   min-width: 512px;
   max-width: 610px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     max-width: 1023px;
     padding: 62px 133px 68px;
     padding-right: 163px;
@@ -35,7 +35,7 @@
   margin: 0;
   margin-bottom: 15px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-weight: 700;
     font-size: 42px;
     line-height: 50px;
@@ -54,13 +54,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 100%;
   }
 }
 
 .feedback label {
-  @include vp-1023 {
+  @include vp-1199 {
     width: 43.5%;
   }
 
@@ -78,7 +78,7 @@
   border: none;
   border-bottom: 1px solid #74819c;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 100%;
     padding: 7px 0 6px;
   }

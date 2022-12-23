@@ -1,5 +1,5 @@
 const buttonBuy = document.getElementById('buy-sub');
-const blockSubs =document.getElementById('subs');
+const blockSubs = document.getElementById('subs');
 
 const scroll = (block) => {
   block.scrollIntoView({

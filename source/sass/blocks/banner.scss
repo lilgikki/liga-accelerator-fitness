@@ -6,7 +6,7 @@
   z-index: 0;
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
-  @include vp-1023 {
+  @include vp-1199 {
     background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
@@ -22,7 +22,7 @@
   color: $color-default-white;
   display: flex;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding: 82px 46px;
     min-width: 768px;
     max-width: 768px;
@@ -44,7 +44,7 @@
   align-items: flex-end;
   width: 378px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-top: 59px;
     width: 324px;
   }
@@ -63,7 +63,7 @@
   align-items: flex-end;
   margin-bottom: 45px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-bottom: 35px;
   }
 
@@ -85,7 +85,7 @@
   text-align: right;
   letter-spacing: 0.05em;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 200px;
     font-size: 72px;
     line-height: 87px;
@@ -107,7 +107,7 @@
   letter-spacing: 0.01em;
   text-transform: uppercase;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 62px;
     margin-bottom: 13px;
     font-size: 32px;
@@ -130,7 +130,7 @@
   display: grid;
   grid-template-columns: 100%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-bottom: 22px;
   }
 
@@ -155,7 +155,7 @@
   line-height: 150%;
   text-align: right;
 
-  @include vp-1023 {
+  @include vp-1199 {
     letter-spacing: 0.01em;
   }
 }
@@ -186,7 +186,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 186px;
   }
 
@@ -210,7 +210,7 @@
   margin-left: 64px;
   width: 500px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-left: 28px;
     width: 324px;
   }

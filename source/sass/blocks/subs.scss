@@ -28,7 +28,7 @@
   z-index: 1;
   bottom: -150px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 347px;
     height: 444px;
     bottom: -125px;
@@ -51,7 +51,7 @@
   padding-right: 4px;
   margin-bottom: 8px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-bottom: 11px;
     font-size: 42px;
     line-height: 50px;
@@ -73,7 +73,7 @@
   grid-gap: 46px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 332px;
     grid-gap: 54px;
   }
@@ -97,7 +97,7 @@
   border: none;
   color: rgba(16, 38, 84, 0.5);
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 18px;
     line-height: 27px;
   }
@@ -152,7 +152,7 @@
   grid-template-columns: repeat(3, 31%);
   grid-gap: 3.4%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 442px;
     margin: 44px auto 0;
     grid-template-columns: 100%;
