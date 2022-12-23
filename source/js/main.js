@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {getMask, submitFormBooking} from './mask.js';
-import {sliderReview} from './slider.js';
+import {carouselReview, sliderTrainers} from './slider.js';
 
 // ---------------------------------
 
@@ -17,7 +17,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   getMask();
   submitFormBooking();
-  sliderReview();
+  carouselReview();
+  sliderTrainers();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

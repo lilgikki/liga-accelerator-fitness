@@ -1,20 +1,48 @@
 import './vendor/swiper.js';
 
-const sliderList = document.getElementById('slider');
+const carouselList = document.getElementById('carousel');
+const sliderlList = document.getElementById('slider');
 
-const sliderReview = () => {
-  if (sliderList) {
+const carouselReview = () => {
+  if (carouselList) {
     // eslint-disable-next-line no-unused-vars, no-undef
-    const swiper = new Swiper(sliderList, {
+    const swiper = new Swiper(carouselList, {
       navigation: {
         nextEl: '.review__button--right',
         prevEl: '.review__button--left',
       },
-      spaceBetween: 120,
+      spaceBetween: 560,
       slidesPerView: 1,
       speed: 600,
     });
   }
 };
 
-export {sliderReview};
+const sliderTrainers = () => {
+  if (sliderlList) {
+    // eslint-disable-next-line no-unused-vars, no-undef
+    const swiper = new Swiper(sliderlList, {
+      navigation: {
+        nextEl: '.trainers__button--right',
+        prevEl: '.trainers__button--left',
+      },
+      speed: 600,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+      },
+    });
+  }
+};
+
+export {carouselReview, sliderTrainers};
