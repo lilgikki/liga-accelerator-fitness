@@ -132,6 +132,7 @@
 
 .contacts__item span,
 .contacts__item a {
+  max-width: 170px;
   color: $color-supphire;
   font-weight: 400;
   font-size: 14px;
@@ -141,6 +142,7 @@
   transition: 0.3s;
 
   @include vp-1199 {
+    max-width: 220px;
     font-size: 18px;
     line-height: 27px;
   }

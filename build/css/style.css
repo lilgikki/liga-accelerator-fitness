@@ -2134,7 +2134,10 @@ button,
 }
 
 .subs__buttons {
-  width: 341px;
+  max-width: 392px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (-webkit-max-content)[3];
@@ -2146,6 +2149,7 @@ button,
 }
 
 .subs__button {
+  max-width: 100px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -2253,6 +2257,7 @@ button,
 }
 
 .subs__item h3 {
+  text-align: center;
   margin: 0;
   margin-bottom: 4px;
   font-weight: 700;
@@ -2261,6 +2266,7 @@ button,
 }
 
 .subs__item p {
+  text-align: center;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
@@ -3517,6 +3523,7 @@ button,
 
 .contacts__item span,
 .contacts__item a {
+  max-width: 170px;
   color: #102654;
   font-weight: 400;
   font-size: 14px;
@@ -3590,6 +3597,7 @@ button,
 }
 
 .main-footer__link {
+  max-width: 75px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -3871,7 +3879,7 @@ button,
   }
 
   .subs__buttons {
-    width: 332px;
+    max-width: 408px;
     grid-gap: 54px;
   }
 
@@ -4210,6 +4218,7 @@ button,
 
   .contacts__item span,
   .contacts__item a {
+    max-width: 220px;
     font-size: 18px;
     line-height: 27px;
   }
@@ -4394,7 +4403,7 @@ button,
 
   .subs__buttons {
     margin: 0 5px;
-    width: 290px;
+    max-width: 390px;
     grid-gap: 45px;
   }
 
