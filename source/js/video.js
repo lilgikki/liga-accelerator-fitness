@@ -1,7 +1,9 @@
 const findVideos = () => {
   let video = document.getElementById('video');
 
-  setupVideo(video);
+  if (video) {
+    setupVideo(video);
+  }
 };
 
 const setupVideo = (video) => {
