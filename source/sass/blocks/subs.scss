@@ -20,18 +20,17 @@
 }
 
 .subs__img {
-  width: 287px;
-  height: 494px;
   display: block;
   position: absolute;
-  right: 0;
   z-index: 1;
   bottom: -150px;
+  right: -100px;
+  width: 387px;
 
   @include vp-1199 {
-    width: 347px;
-    height: 444px;
     bottom: -125px;
+    width: 347px;
+    right: 0;
   }
 
   @include vp-767 {

@@ -147,6 +147,7 @@
 }
 
 .about__video::after {
+  pointer-events: none;
   top: 0;
   left: 0;
   position: absolute;
@@ -167,7 +168,16 @@
   }
 }
 
+.about__video--active::after {
+  display: none;
+}
+
+.about__link {
+  display: block;
+}
+
 .about__preview {
+  border: none;
   position: relative;
   width: 364px;
   height: 228px;
@@ -183,14 +193,16 @@
   }
 }
 
-.about__link {
+.about__button {
+  cursor: pointer;
+  display: none;
+  border: none;
   transition: 0.3s;
   position: absolute;
   z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 72px;
@@ -204,12 +216,16 @@
   }
 }
 
-.about__link:hover {
+.about__video--enabled .about__button {
+  display: flex;
+}
+
+.about__button:hover {
   transition: 0.3s;
   box-shadow: $color-torch-red 0 0 10px;
 }
 
-.about__link:active {
+.about__button:active {
   opacity: 0.8;
   transition: 0.3s;
   width: 80px;
@@ -221,7 +237,7 @@
   }
 }
 
-.about__link::after {
+.about__button::after {
   transition: 0.3s;
   content: "";
   width: 100px;
@@ -239,7 +255,7 @@
   }
 }
 
-.about__link:hover::after {
+.about__button:hover::after {
   transition: 0.3s;
   width: 110px;
   height: 110px;
@@ -250,7 +266,7 @@
   }
 }
 
-.about__link svg {
+.about__button svg {
   width: 13px;
   height: 15px;
   margin-left: 4px;

@@ -5,7 +5,8 @@
   width: 100%;
 }
 
-.benefits__bg {
+.benefits::before {
+  content: "";
   position: absolute;
   z-index: 1;
   background-color: $color-ghost-white;

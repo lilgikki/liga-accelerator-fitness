@@ -1682,6 +1682,12 @@ button,
   grid-template-columns: 50% 50%;
 }
 
+.main-index {
+  overflow-x: hidden;
+  min-width: 320px;
+  width: 100%;
+}
+
 .main-header {
   min-width: 320px;
   overflow: hidden;
@@ -1995,6 +2001,7 @@ button,
 }
 
 .about__video::after {
+  pointer-events: none;
   top: 0;
   left: 0;
   position: absolute;
@@ -2005,13 +2012,25 @@ button,
   background-color: rgba(20, 54, 122, 0.5);
 }
 
+.about__video--active::after {
+  display: none;
+}
+
+.about__link {
+  display: block;
+}
+
 .about__preview {
+  border: none;
   position: relative;
   width: 364px;
   height: 228px;
 }
 
-.about__link {
+.about__button {
+  cursor: pointer;
+  display: none;
+  border: none;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -2022,9 +2041,6 @@ button,
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2038,7 +2054,13 @@ button,
   background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
 }
 
-.about__link:hover {
+.about__video--enabled .about__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__button:hover {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -2046,7 +2068,7 @@ button,
   box-shadow: #ed0233 0 0 10px;
 }
 
-.about__link:active {
+.about__button:active {
   opacity: 0.8;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -2055,7 +2077,7 @@ button,
   height: 80px;
 }
 
-.about__link::after {
+.about__button::after {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -2072,7 +2094,7 @@ button,
   border: 2px solid rgba(237, 2, 51, 0.2);
 }
 
-.about__link:hover::after {
+.about__button:hover::after {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -2080,7 +2102,7 @@ button,
   height: 110px;
 }
 
-.about__link svg {
+.about__button svg {
   width: 13px;
   height: 15px;
   margin-left: 4px;
@@ -2111,13 +2133,12 @@ button,
 }
 
 .subs__img {
-  width: 287px;
-  height: 494px;
   display: block;
   position: absolute;
-  right: 0;
   z-index: 1;
   bottom: -150px;
+  right: -100px;
+  width: 387px;
 }
 
 .subs__title {
@@ -2775,7 +2796,8 @@ button,
   width: 100%;
 }
 
-.benefits__bg {
+.benefits::before {
+  content: "";
   position: absolute;
   z-index: 1;
   background-color: #f8f9fc;
@@ -3839,36 +3861,36 @@ button,
     height: 167px;
   }
 
-  .about__link {
+  .about__button {
     width: 52px;
     height: 52px;
   }
 
-  .about__link:active {
+  .about__button:active {
     width: 65px;
     height: 65px;
   }
 
-  .about__link::after {
+  .about__button::after {
     width: 73px;
     height: 73px;
   }
 
-  .about__link:hover::after {
+  .about__button:hover::after {
     width: 85px;
     height: 85px;
   }
 
-  .about__link svg {
+  .about__button svg {
     margin-left: 3px;
     width: 9px;
     height: 10px;
   }
 
   .subs__img {
-    width: 347px;
-    height: 444px;
     bottom: -125px;
+    width: 347px;
+    right: 0;
   }
 
   .subs__title {
@@ -4000,7 +4022,7 @@ button,
     padding: 55px 20px 30px 10px;
   }
 
-  .benefits__bg {
+  .benefits::before {
     margin: 0;
   }
 

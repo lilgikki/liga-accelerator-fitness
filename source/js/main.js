@@ -4,6 +4,7 @@ import {getMask, submitFormBooking} from './mask.js';
 import {carouselReview, sliderTrainers} from './slider.js';
 import {changeTab} from './subs-tabs.js';
 import {scrollToSubs} from './scroll.js';
+import {findVideos} from './video.js';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   sliderTrainers();
   changeTab();
   scrollToSubs();
+  findVideos();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

@@ -19,7 +19,7 @@
               <use xlink:href="img/sprite/sprite.svg#logo"></use>
             </svg>
           </a>
-          <a class="main-header__tel" href="tel:8-800-555-55-55">8-800-555-55-55</a>
+          <a class="main-header__tel" href="tel:88005555555">8-800-555-55-55</a>
         </nav>
       </header>
       <main class="main-index">
@@ -67,19 +67,21 @@
               <source type="image/webp" srcset="img/about-mobile.webp, img/about-mobile@2.webp 2x">
               <img class="about__pic" width="320" height="313" src="img/about-mobile.jpg" srcset="img/about-mobile@2.jpg" alt="Изображение тренажерного зала">
             </picture>
-            <div class="about__video">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/about-video-desktop.webp, img/about-video-desktop@2.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/about-video-tablet.webp, img/about-video-tablet@2.webp 2x">
-                <source type="image/webp" srcset="img/about-video-mobile.webp, img/about-video-mobile@2.webp 2x">
-                <img class="about__preview" width="320" height="167" src="img/about-video-mobile.jpg" srcset="img/about-video-mobile@2.jpg" alt="Превью видео">
-              </picture>
-              <a class="about__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank">
-                <span class="visually-hidden"></span>
+            <div class="about__video" id="video">
+              <a class="about__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank" id="video-link">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/about-video-desktop.webp, img/about-video-desktop@2.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/about-video-tablet.webp, img/about-video-tablet@2.webp 2x">
+                  <source type="image/webp" srcset="img/about-video-mobile.webp, img/about-video-mobile@2.webp 2x">
+                  <img class="about__preview" width="320" height="167" src="img/about-video-mobile.jpg" srcset="img/about-video-mobile@2.jpg" alt="Превью видео">
+                </picture>
+              </a>
+              <button class="about__button" type="button" id="video-button">
+                <span class="visually-hidden">Кнопка включения видео</span>
                 <svg width="13" height="15">
                   <use xlink:href="img/sprite/sprite.svg#play"></use>
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
         </section>
@@ -207,9 +209,8 @@
             </ul>
           </div>
           <picture>
-            <source type="image/webp" media="(max-width: 1199px)" srcset="img/dumbbells-tablet.webp, img/dumbbells-tablet@2.webp 2x">
-            <source type="image/webp" srcset="img/dumbbells-desktop.webp, img/dumbbells-desktop@2.webp 2x">
-            <img class="subs__img" width="287" height="494" src="img/dumbbells-desktop.png" srcset="img/dumbbells-desktop@2.png" alt="Изображение блинов">
+            <source type="image/webp" srcset="img/dumbbells-tablet.webp, img/dumbbells-tablet@2.webp 2x">
+            <img class="subs__img" width="347" height="444" src="img/dumbbells-tablet.png" srcset="img/dumbbells-tablet@2.png" alt="Изображение блинов">
           </picture>
         </section>
         <section class="event">
@@ -231,12 +232,14 @@
               <p>Ежегодные соревнования по&nbsp;CrossFit</p>
               <a class="event__link" href="#">Заполнить заявку</a>
             </div>
-            <picture class="event__pic">
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/poster-desktop.webp, img/poster-desktop@2.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/poster-tablet.webp, img/poster-tablet@2.webp 2x">
-              <source type="image/webp" srcset="img/poster-mobile.webp, img/poster-mobile@2.webp 2x">
-              <img class="event__img" width="290" height="292" src="img/poster-mobile.jpg" srcset="img/poster-mobile@2.jpg" alt="Постер ивента">
-            </picture>
+            <div class="event__pic">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/poster-desktop.webp, img/poster-desktop@2.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/poster-tablet.webp, img/poster-tablet@2.webp 2x">
+                <source type="image/webp" srcset="img/poster-mobile.webp, img/poster-mobile@2.webp 2x">
+                <img class="event__img" width="290" height="292" src="img/poster-mobile.jpg" srcset="img/poster-mobile@2.jpg" alt="Постер ивента">
+              </picture>
+            </div>
           </div>
         </section>
         <section class="trainers">
@@ -258,10 +261,12 @@
               <div class="trainers__slider swiper" id="slider">
                 <ul class="trainers__list list swiper-wrapper">
                   <li class="trainers__item swiper-slide" tabindex="0">
-                    <picture class="trainers__pic">
-                      <source type="image/webp" srcset="img/trainer-1-desktop.webp, img/trainer-1-desktop@2.webp 2x">
-                      <img class="trainers__img" width="290" height="292" src="img/trainer-1-desktop.jpg" srcset="img/trainer-1-desktop@2.jpg" alt="Фотография тренера">
-                    </picture>
+                    <div class="trainers__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/trainer-1-desktop.webp, img/trainer-1-desktop@2.webp 2x">
+                        <img class="trainers__img" width="290" height="292" src="img/trainer-1-desktop.jpg" srcset="img/trainer-1-desktop@2.jpg" alt="Фотография тренера">
+                      </picture>
+                    </div>
                     <div class="trainers__text">
                       <h3>Анна Павлова</h3>
                       <span>CrossFit</span>
@@ -279,10 +284,12 @@
                     </div>
                   </li>
                   <li class="trainers__item swiper-slide" tabindex="0">
-                    <picture class="trainers__pic">
-                      <source type="image/webp" srcset="img/trainer-2-desktop.webp, img/trainer-2-desktop@2.webp 2x">
-                      <img class="trainers__img" width="290" height="292" src="img/trainer-2-desktop.jpg" srcset="img/trainer-2-desktop@2.jpg" alt="Фотография тренера">
-                    </picture>
+                    <div class="trainers__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/trainer-2-desktop.webp, img/trainer-2-desktop@2.webp 2x">
+                        <img class="trainers__img" width="290" height="292" src="img/trainer-2-desktop.jpg" srcset="img/trainer-2-desktop@2.jpg" alt="Фотография тренера">
+                      </picture>
+                    </div>
                     <div class="trainers__text">
                       <h3>Алексей Лавров</h3>
                       <span>CrossFit</span>
@@ -300,10 +307,12 @@
                     </div>
                   </li>
                   <li class="trainers__item swiper-slide" tabindex="0">
-                    <picture class="trainers__pic">
-                      <source type="image/webp" srcset="img/trainer-3-desktop.webp, img/trainer-3-desktop@2.webp 2x">
-                      <img class="trainers__img" width="290" height="292" src="img/trainer-3-desktop.jpg" srcset="img/trainer-3-desktop@2.jpg" alt="Фотография тренера">
-                    </picture>
+                    <div class="trainers__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/trainer-3-desktop.webp, img/trainer-3-desktop@2.webp 2x">
+                        <img class="trainers__img" width="290" height="292" src="img/trainer-3-desktop.jpg" srcset="img/trainer-3-desktop@2.jpg" alt="Фотография тренера">
+                      </picture>
+                    </div>
                     <div class="trainers__text">
                       <h3>Александр Пашков</h3>
                       <span>CrossFit</span>
@@ -321,10 +330,12 @@
                     </div>
                   </li>
                   <li class="trainers__item swiper-slide" tabindex="0">
-                    <picture class="trainers__pic">
-                      <source type="image/webp" srcset="img/trainer-4-desktop.webp, img/trainer-4-desktop@2.webp 2x">
-                      <img class="trainers__img" width="290" height="292" src="img/trainer-4-desktop.jpg" srcset="img/trainer-4-desktop@2.jpg" alt="Фотография тренера">
-                    </picture>
+                    <div class="trainers__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/trainer-4-desktop.webp, img/trainer-4-desktop@2.webp 2x">
+                        <img class="trainers__img" width="290" height="292" src="img/trainer-4-desktop.jpg" srcset="img/trainer-4-desktop@2.jpg" alt="Фотография тренера">
+                      </picture>
+                    </div>
                     <div class="trainers__text">
                       <h3>Мария Кетова</h3>
                       <span>CrossFit</span>
@@ -342,10 +353,12 @@
                     </div>
                   </li>
                   <li class="trainers__item swiper-slide" tabindex="0">
-                    <picture class="trainers__pic">
-                      <source type="image/webp" srcset="img/trainer-1-desktop.webp, img/trainer-1-desktop@2.webp 2x">
-                      <img class="trainers__img" width="290" height="292" src="img/trainer-1-desktop.jpg" srcset="img/trainer-1-desktop@2.jpg" alt="Фотография тренера">
-                    </picture>
+                    <div class="trainers__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/trainer-1-desktop.webp, img/trainer-1-desktop@2.webp 2x">
+                        <img class="trainers__img" width="290" height="292" src="img/trainer-1-desktop.jpg" srcset="img/trainer-1-desktop@2.jpg" alt="Фотография тренера">
+                      </picture>
+                    </div>
                     <div class="trainers__text">
                       <h3>Анна Павлова</h3>
                       <span>CrossFit</span>
@@ -363,10 +376,12 @@
                     </div>
                   </li>
                   <li class="trainers__item swiper-slide" tabindex="0">
-                    <picture class="trainers__pic">
-                      <source type="image/webp" srcset="img/trainer-2-desktop.webp, img/trainer-2-desktop@2.webp 2x">
-                      <img class="trainers__img" width="290" height="292" src="img/trainer-2-desktop.jpg" srcset="img/trainer-2-desktop@2.jpg" alt="Фотография тренера">
-                    </picture>
+                    <div class="trainers__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/trainer-2-desktop.webp, img/trainer-2-desktop@2.webp 2x">
+                        <img class="trainers__img" width="290" height="292" src="img/trainer-2-desktop.jpg" srcset="img/trainer-2-desktop@2.jpg" alt="Фотография тренера">
+                      </picture>
+                    </div>
                     <div class="trainers__text">
                       <h3>Алексей Лавров</h3>
                       <span>CrossFit</span>
@@ -384,10 +399,12 @@
                     </div>
                   </li>
                   <li class="trainers__item swiper-slide" tabindex="0">
-                    <picture class="trainers__pic">
-                      <source type="image/webp" srcset="img/trainer-3-desktop.webp, img/trainer-3-desktop@2.webp 2x">
-                      <img class="trainers__img" width="290" height="292" src="img/trainer-3-desktop.jpg" srcset="img/trainer-3-desktop@2.jpg" alt="Фотография тренера">
-                    </picture>
+                    <div class="trainers__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/trainer-3-desktop.webp, img/trainer-3-desktop@2.webp 2x">
+                        <img class="trainers__img" width="290" height="292" src="img/trainer-3-desktop.jpg" srcset="img/trainer-3-desktop@2.jpg" alt="Фотография тренера">
+                      </picture>
+                    </div>
                     <div class="trainers__text">
                       <h3>Александр Пашков</h3>
                       <span>CrossFit</span>
@@ -405,10 +422,12 @@
                     </div>
                   </li>
                   <li class="trainers__item swiper-slide" tabindex="0">
-                    <picture class="trainers__pic">
-                      <source type="image/webp" srcset="img/trainer-4-desktop.webp, img/trainer-4-desktop@2.webp 2x">
-                      <img class="trainers__img" width="290" height="292" src="img/trainer-4-desktop.jpg" srcset="img/trainer-4-desktop@2.jpg" alt="Фотография тренера">
-                    </picture>
+                    <div class="trainers__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/trainer-4-desktop.webp, img/trainer-4-desktop@2.webp 2x">
+                        <img class="trainers__img" width="290" height="292" src="img/trainer-4-desktop.jpg" srcset="img/trainer-4-desktop@2.jpg" alt="Фотография тренера">
+                      </picture>
+                    </div>
                     <div class="trainers__text">
                       <h3>Мария Кетова</h3>
                       <span>CrossFit</span>
@@ -431,7 +450,6 @@
           </div>
         </section>
         <section class="benefits">
-          <div class="benefits__bg"></div>
           <div class="benefits__container container">
             <h2 class="benefits__title">Наши преимущества</h2>
             <ul class="benefits__list list">
@@ -499,12 +517,14 @@
                   <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
                   <a class="promotion__link" href="#">Подробнее</a>
                 </div>
-                <picture class="promotion__pic">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/stock-desktop.webp, img/stock-desktop@2.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/stock-tablet.webp, img/stock-tablet@2.webp 2x">
-                  <source type="image/webp" srcset="img/stock-mobile.webp, img/stock-mobile@2.webp 2x">
-                  <img class="promotion__img" width="290" height="299" src="img/stock-mobile.jpg" srcset="img/stock-mobile@2.jpg" alt="Фотография в блоке акции">
-                </picture>
+                <div class="promotion__pic">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/stock-desktop.webp, img/stock-desktop@2.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/stock-tablet.webp, img/stock-tablet@2.webp 2x">
+                    <source type="image/webp" srcset="img/stock-mobile.webp, img/stock-mobile@2.webp 2x">
+                    <img class="promotion__img" width="290" height="299" src="img/stock-mobile.jpg" srcset="img/stock-mobile@2.jpg" alt="Фотография в блоке акции">
+                  </picture>
+                </div>
               </li>
               <li class="promotion__item">
                 <span>Месяц бесплатно</span>
@@ -538,34 +558,42 @@
               <div class="review__slider swiper" id="carousel">
                 <div class="review__list list swiper-wrapper">
                   <blockquote class="review__item swiper-slide" tabindex="0">
-                    <picture class="review__pic">
-                      <source type="image/webp" srcset="img/review.webp, img/review@2.webp 2x">
-                      <img class="review__img" width="68" height="68" src="img/review.jpg" srcset="img/review@2.jpg" alt="Аватар отзыва">
-                    </picture>
+                    <div class="review__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/review.webp, img/review@2.webp 2x">
+                        <img class="review__img" width="68" height="68" src="img/review.jpg" srcset="img/review@2.jpg" alt="Аватар отзыва">
+                      </picture>
+                    </div>
                     <h3>Анна Орлова</h3>
                     <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                   </blockquote>
                   <blockquote class="review__item swiper-slide" tabindex="0">
-                    <picture class="review__pic">
-                      <source type="image/webp" srcset="img/review.webp, img/review@2.webp 2x">
-                      <img class="review__img" width="68" height="68" src="img/review.jpg" srcset="img/review@2.jpg" alt="Аватар отзыва">
-                    </picture>
+                    <div class="review__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/review.webp, img/review@2.webp 2x">
+                        <img class="review__img" width="68" height="68" src="img/review.jpg" srcset="img/review@2.jpg" alt="Аватар отзыва">
+                      </picture>
+                    </div>
                     <h3>Отзыв 2</h3>
                     <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                   </blockquote>
                   <blockquote class="review__item swiper-slide" tabindex="0">
-                    <picture class="review__pic">
-                      <source type="image/webp" srcset="img/review.webp, img/review@2.webp 2x">
-                      <img class="review__img" width="68" height="68" src="img/review.jpg" srcset="img/review@2.jpg" alt="Аватар отзыва">
-                    </picture>
+                    <div class="review__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/review.webp, img/review@2.webp 2x">
+                        <img class="review__img" width="68" height="68" src="img/review.jpg" srcset="img/review@2.jpg" alt="Аватар отзыва">
+                      </picture>
+                    </div>
                     <h3>Отзыв 3</h3>
                     <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                   </blockquote>
                   <blockquote class="review__item swiper-slide" tabindex="0">
-                    <picture class="review__pic">
-                      <source type="image/webp" srcset="img/review.webp, img/review@2.webp 2x">
-                      <img class="review__img" width="68" height="68" src="img/review.jpg" srcset="img/review@2.jpg" alt="Аватар отзыва">
-                    </picture>
+                    <div class="review__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/review.webp, img/review@2.webp 2x">
+                        <img class="review__img" width="68" height="68" src="img/review.jpg" srcset="img/review@2.jpg" alt="Аватар отзыва">
+                      </picture>
+                    </div>
                     <h3>Отзыв 4</h3>
                     <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                   </blockquote>
@@ -605,7 +633,7 @@
                 </li>
                 <li class="contacts__item contacts__item--3">
                   <h3>Телефон:</h3>
-                  <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
+                  <a href="tel:88005555555">8-800-555-55-55</a>
                 </li>
                 <li class="contacts__item">
                   <h3>Email:</h3>
