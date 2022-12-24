@@ -26,7 +26,7 @@ const createIframe = () => {
 
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('allow', 'autoplay');
-  iframe.setAttribute('src', 'https://www.youtube.com/watch?v=9TZXsZItgdw');
+  iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?rel=0&showinfo=0&autoplay=1');
   iframe.classList.add('about__preview');
 
   return iframe;
