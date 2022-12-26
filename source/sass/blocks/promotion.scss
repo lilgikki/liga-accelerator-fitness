@@ -11,13 +11,12 @@
   @include vp-1199 {
     padding-top: 95px;
     padding-bottom: 92px;
-    max-width: 1023px;
+    max-width: 1119px;
   }
 
   @include vp-767 {
     padding-top: 63px;
     padding-bottom: 63px;
-    max-width: 767px;
   }
 }
 
@@ -135,10 +134,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin: 7px 0;
+  margin: 7px 0 30px;
 
   @include vp-767 {
-    margin: 13px 0;
+    margin: 13px 0 30px;
     text-align: center;
   }
 }
