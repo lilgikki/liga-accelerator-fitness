@@ -50,6 +50,7 @@
 }
 
 .main-header__tel {
+  margin-left: 40px;
   transition: 0.3s;
   color: $color-default-white;
   font-family: "Alumni Sans", "Arial", sans-serif;
@@ -57,6 +58,7 @@
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+  max-width: 160px;
 
   @include vp-1199 {
     font-size: 24px;
@@ -68,6 +70,10 @@
     font-size: 20px;
     line-height: 17px;
   }
+}
+
+.main-header__tel:last-of-type {
+  margin-left: 0;
 }
 
 .main-header__tel:hover {

@@ -21,6 +21,8 @@
   }
 
   @include vp-767 {
+    margin-left: 0;
+    margin-right: auto;
     padding-top: 50px;
     padding-bottom: 52px;
     flex-wrap: wrap;
