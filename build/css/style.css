@@ -4044,7 +4044,6 @@ button,
   }
 
   .trainers__container {
-    max-width: 1199px;
     padding: 0;
     padding-bottom: 100px;
   }
@@ -4068,12 +4067,6 @@ button,
 
   .trainers__item {
     width: 47.3%;
-    min-height: 294px;
-    height: auto;
-  }
-
-  .trainers__img {
-    width: 268px;
     height: 294px;
   }
 
@@ -4592,13 +4585,9 @@ button,
   }
 
   .trainers__item {
+    height: auto;
     width: 100%;
     min-height: 274px;
-  }
-
-  .trainers__img {
-    width: 226px;
-    height: 274px;
   }
 
   .trainers__item:hover .trainers__text,
